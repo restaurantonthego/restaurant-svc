@@ -3,9 +3,13 @@ FROM golang
 # Add Maintainer Info
 LABEL maintainer="Brandon Piner <brandon2255p@gmail.com>"
 
-# Set the Current Working Directory inside the container
-WORKDIR $GOPATH/src/github.com/brandon2255p/restaurant/restaurant-svc
 RUN go get google.golang.org/grpc
+RUN go get github.com/google/uuid
+RUN go get github.com/looplab/eventhorizon 
+
+# Set the Current Working Directory inside the container
+WORKDIR $GOPATH/src/github.com/restaurantonthego/restaurant-svc
+
 # Copy everything from the current directory to the PWD(Present Working Directory) inside the container
 COPY . .
 

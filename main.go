@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/brandon2255p/restaurant/restaurant-svc/proto"
+	pb "github.com/restaurantonthego/restaurant-svc/proto"
 	"google.golang.org/grpc"
 )
 
