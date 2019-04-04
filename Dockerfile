@@ -20,6 +20,8 @@ COPY . .
 # Install the package
 RUN go install -v ./...
 
+ENV MONGO_HOST=localhost:27017
+
 EXPOSE 50051
 
 CMD ["restaurant-svc"]
