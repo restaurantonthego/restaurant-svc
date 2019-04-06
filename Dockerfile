@@ -6,7 +6,7 @@ LABEL maintainer="Brandon Piner <brandon2255p@gmail.com>"
 RUN go get google.golang.org/grpc
 RUN go get github.com/google/uuid
 RUN go get github.com/looplab/eventhorizon 
-
+RUN go get github.com/globalsign/mgo
 # Set the Current Working Directory inside the container
 WORKDIR $GOPATH/src/github.com/restaurantonthego/restaurant-svc
 
